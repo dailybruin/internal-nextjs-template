@@ -17,18 +17,13 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async signIn({ account, profile }) {
-      if (
+      return Boolean(
         account?.provider === 'google' &&
-        profile?.email_verified &&
-        profile?.email
-      ) {
-        return (
+          profile?.email &&
           profile.email_verified &&
           profile.email.endsWith(`@${process.env.EMAIL_DOMAIN}`) &&
-          profile.email.endsWith('.ucla.edu')
-        );
-      }
-      return false;
+          profile.email.endsWith('.ucla.edu'),
+      );
     },
   },
 };
