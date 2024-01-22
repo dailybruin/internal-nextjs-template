@@ -2,7 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies with
+```bash
+npm install
+```
+
+You can set up Prettier in your IDE by installing extensions and turning on “Format on Save” (in VSCode) or its equivalent for the workspace/project and selecting Prettier as the formatter. 
+
+You can also run `npx prettier --check  .` to check to see if your changes match the configured code style or `npx prettier --write .` to format your files.
+
+To run the development server:
 
 ```bash
 npm run dev
