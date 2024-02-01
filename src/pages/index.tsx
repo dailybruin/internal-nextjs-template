@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import NavBar from "@/pages/navbar";
+import Opinion from "@/pages/opinion";
+
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -8,6 +10,7 @@ export default function Home() {
     return (
         <main >
             <NavBar />
+
         </main>
 
     )
