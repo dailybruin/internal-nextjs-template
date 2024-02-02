@@ -1,6 +1,3 @@
 export default function Opinion() {
-    return (
-        <p>Opinion</p>
-        )
-
+  return <p>Opinion</p>;
 }

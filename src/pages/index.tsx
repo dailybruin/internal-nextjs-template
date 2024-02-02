@@ -1,20 +1,17 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import NavBar from "@/pages/navbar";
-import Opinion from "@/pages/opinion";
+import NavBar from '@/pages/navbar';
+import Opinion from '@/pages/opinion';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-
-    return (
-        <main >
-            <NavBar />
-
-        </main>
-
-    )
-    /*return (
+  return (
+    <main>
+      <NavBar />
+    </main>
+  );
+  /*return (
       <main
           className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
@@ -131,5 +128,4 @@ export default function Home() {
         </div>
       </main>
   );*/
-
 }
