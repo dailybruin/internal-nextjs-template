@@ -1,3 +1,11 @@
+import NavBar from "@/pages/navbar";
+import Texts from "@/pages/texts";
+
 export default function Opinion() {
-  return <p>Opinion</p>;
+  return (
+      <div>
+        <NavBar/>
+        <Texts/>
+      </div>
+  )
 }

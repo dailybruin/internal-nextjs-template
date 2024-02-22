@@ -7,13 +7,13 @@ export default function NavBar() {
     <nav className="bg-background-500 py-4 font-bold text-black border-b-4 border-line-500">
       <div className="flex items-center justify-between ml-6 mr-6">
         <div className="flex items-center">
-          <a href="/" className="text-2xl">
+          <a href="/" className="text-2xl font-bold">
             woof.
           </a>
-          <div className="absolute top-1 left-32 w-20 h-20">
+          <div className="absolute top-1 left-36 w-20 h-20">
             <Image src={ellipseSvg} alt="Ellipse Logo" />
           </div>
-          <div className="relative z-10 left-3">
+          <div className="relative z-10 left-5">
             <Image src={woofSvg} alt="Woof Logo" />
           </div>
         </div>
@@ -25,61 +25,75 @@ export default function NavBar() {
           />
         </div>
       </div>
-      <ul className="flex items-center space-x-8 ml-6 mt-2">
+      <ul className="flex items-center space-x-8 ml-6 mt-2 ">
         <li>
           <a
-            href="/all"
-            className="hover:text-line-500 hover:after:block hover:after:h-1 hover:after:bg-line-500"
+              href="/all"
+              className="nav-link group"
           >
-            All
+            <span className="group-hover:text-line-500 relative ">
+              All<span
+                className="absolute top-4 left-0 w-full h-0 bg-line-500 group-hover:h-1 "></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/news"
-            className="hover:text-news-500 hover:after:block hover:after:h-1 hover:after:bg-news-500 "
+              href="/news"
+              className="nav-link group"
           >
-            News
+            <span className="group-hover:text-news-500 relative">
+              News<span
+                className="absolute top-4 left-0 w-full h-0 bg-news-500 group-hover:h-1"></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/opinion"
-            className="hover:text-opinion-500 hover:after:block hover:after:h-1 hover:after:bg-opinion-500 "
+              href="/opinion"
+              className="nav-link group"
           >
-            Opinion
+            <span className="group-hover:text-opinion-500 relative">
+              Opinion<span
+                className="absolute top-4 left-0 w-full h-0 bg-opinion-500 group-hover:h-1"></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/arts"
-            className="hover:text-arts-500 hover:after:block hover:after:h-1 hover:after:bg-arts-500 "
+              href="/arts"
+              className="nav-link group"
           >
-            Arts
+            <span className="group-hover:text-arts-500 relative">
+              Arts<span
+                className="absolute top-4 left-0 w-full h-0 bg-arts-500 group-hover:h-1"></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/sports"
-            className="hover:text-sports-500 hover:after:block hover:after:h-1 hover:after:bg-sports-500 "
+              href="/sports"
+              className="nav-link group"
           >
-            Sports
+            <span className="group-hover:text-sports-500 relative">
+              Sports<span
+                className="absolute top-4 left-0 w-full h-0 bg-sports-500 group-hover:h-1"></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/misc"
-            className="hover:text-misc-500 hover:after:block hover:after:h-1 hover:after:bg-misc-500 "
+              href="/misc"
+              className="nav-link group"
           >
-            Misc.
+            <span className="group-hover:text-misc-500 relative">
+              Misc.<span
+                className="absolute top-4 left-0 w-full h-0 bg-misc-500 group-hover:h-1"></span></span>
           </a>
         </li>
         <li>
           <a
-            href="/troubleshooting"
-            className="hover:text-troubleshooting-500 hover:after:block hover:after:h-1 hover:after:bg-troubleshooting-500 "
+              href="/troubleshooting"
+              className="nav-link group"
           >
-            Troubleshooting
+           <span className="group-hover:text-troubleshooting-500 relative">
+              Troubleshooting<span
+               className="absolute top-4 left-0 w-full h-0 bg-troubleshooting-500 group-hover:h-1"></span></span>
           </a>
         </li>
       </ul>
